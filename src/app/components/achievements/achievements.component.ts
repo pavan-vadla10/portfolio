@@ -48,14 +48,14 @@ export class AchievementsComponent {
       icon: '📄',
       title: 'IEEE Research Publication',
       description:
-      'Published research on Multi-Symbol Detection of QPSK Signals in Noisy Channels.'
+      'Published research'
     },
 
     {
       icon: '🚀',
       title: 'Enterprise Modules',
       description:
-      'Delivered UDIN, Event Management and Project Management modules.'
+      'Delivered Project Management modules.'
     },
 
     {
