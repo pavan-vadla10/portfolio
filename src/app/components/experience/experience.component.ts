@@ -23,7 +23,7 @@ export class ExperienceComponent {
       role: 'System Engineer',
       duration: '2024 - Present',
       description:
-        'Developed enterprise applications using Angular, Spring Boot and PostgreSQL. Worked on UDIN, Event Management and Project Management modules while building scalable REST APIs and responsive user interfaces.',
+        'Developed enterprise applications using Angular, Spring Boot and PostgreSQL.',
       technologies: ['Angular', 'Spring Boot', 'Java', 'TypeScript', 'PostgreSQL', 'REST API'],
     },
   ];
