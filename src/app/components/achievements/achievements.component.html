@@ -1,0 +1,42 @@
+<section id="achievements" class="achievements">
+    <div class="container">
+        <div class="section-title">
+            <span>ACHIEVEMENTS</span>
+            <h2>Milestones & Achievements</h2>
+            <p>
+                Highlights from my professional journey.
+            </p>
+        </div>
+
+        <!-- Statistics -->
+
+        <div class="stats-grid">
+            <div class="glass stat-card" *ngFor="let stat of stats">
+                <h2>
+                    {{stat.value}}
+                </h2>
+
+                <span>
+                    {{stat.label}}
+                </span>
+            </div>
+        </div>
+
+        <!-- Achievement Cards -->
+
+        <div class="achievement-grid">
+            <div class="glass achievement-card" *ngFor="let item of achievements">
+                <div class="icon">
+                    {{item.icon}}
+                </div>
+
+                <h3>
+                    {{item.title}}
+                </h3>
+                <p>
+                    {{item.description}}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

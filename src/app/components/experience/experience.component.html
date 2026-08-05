@@ -1,0 +1,42 @@
+<section id="experience" class="experience">
+  <div class="container">
+    <div class="section-title">
+      <span>
+        CAREER
+      </span>
+      <h2>
+        Professional Experience
+      </h2>
+
+      <p>
+        My professional journey in software development.
+      </p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item" *ngFor="let item of experience">
+        <div class="timeline-dot">
+        </div>
+        <div class="timeline-card glass">
+          <div class="company">
+            {{item.company}}
+          </div>
+          <h3>
+            {{item.role}}
+          </h3>
+          <span class="duration">
+            {{item.duration}}
+          </span>
+          <p>
+            {{item.description}}
+          </p>
+          <div class="tech-list">
+            <span *ngFor="let tech of item.technologies">
+              {{tech}}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

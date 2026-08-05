@@ -1,0 +1,55 @@
+<nav [class.scrolled]="isScrolled">
+
+    <div class="container navbar">
+
+        <div class="logo">
+            PK
+        </div>
+
+        <ul class="desktop-menu">
+
+            <li (click)="scrollTo('home')">Home</li>
+
+            <li (click)="scrollTo('about')">About</li>
+
+            <li (click)="scrollTo('skills')">Skills</li>
+
+            <li (click)="scrollTo('experience')">Experience</li>
+
+            <li (click)="scrollTo('projects')">Projects</li>
+
+            <li (click)="scrollTo('contact')">Contact</li>
+
+        </ul>
+
+        <button class="resume-btn">
+            Resume
+        </button>
+
+        <div class="hamburger"
+             (click)="toggleMenu()">
+
+            ☰
+
+        </div>
+
+    </div>
+
+    <div class="mobile-menu"
+         *ngIf="isMobileMenuOpen">
+
+        <a (click)="scrollTo('home')">Home</a>
+
+        <a (click)="scrollTo('about')">About</a>
+
+        <a (click)="scrollTo('skills')">Skills</a>
+
+        <a (click)="scrollTo('experience')">Experience</a>
+
+        <a (click)="scrollTo('projects')">Projects</a>
+
+        <a (click)="scrollTo('contact')">Contact</a>
+
+    </div>
+
+</nav>
